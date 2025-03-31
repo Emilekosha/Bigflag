@@ -148,3 +148,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+function copyIban() {
+  const ibanText = document.getElementById("iban").textContent;
+  navigator.clipboard.writeText(ibanText).then(() => {
+    alert("IBAN copié : " + ibanText);
+  }).catch(err => {
+    alert("Erreur lors de la copie : " + err);
+  });
+}

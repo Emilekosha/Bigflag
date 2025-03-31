@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adventure Sports</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -285,6 +289,42 @@
           <button class="close-btn">×</button>
         </div>
       </section>
+
+      <section class="bank-section">
+        <div class="bank-container">
+          
+          <!-- Icône Sécurité -->
+          <div class="icon-wrapper">
+            <svg class="icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0-1.1-.9-2-2-2s-2 .9-2 2 2 4 2 4 2-2.9 2-4zm0 0V4m0 7a5 5 0 015 5v2a5 5 0 01-5 5h-1.6a1 1 0 01-.8-1.6l.9-1.2a1 1 0 011.6-.1 5 5 0 00.4.3 5 5 0 005-5v-2a5 5 0 00-5-5z" />
+            </svg>
+          </div>
+      
+          <!-- Titre -->
+          <h2 class="title">Coordonnées Bancaires</h2>
+          <p class="subtitle">Veuillez effectuer votre virement bancaire sur le compte ci-dessous :</p>
+      
+          <!-- Infos Bancaires -->
+          <div class="bank-details">
+            <p class="name"><strong>👤 Nom :</strong> EMERIC AFFOGNITODE</p>
+            <p class="banq"><strong>🏦 Banque</strong> </p>
+            <img src="./image/photo_2025-03-31_09-57-55.jpg" alt=""/>
+            <p class="name"><strong>💳 IBAN :</strong> <span id="iban">FR76 1027 8061 7700 0202 0570 282</span></p>
+            <!-- <p><strong>🔑 BIC :</strong> AGRIFRPPXXX</p> -->
+          </div>
+      
+          <!-- Bouton Copier -->
+          <button onclick="copyIban()" class="copy-btn">Copier l'IBAN</button>
+      
+          <!-- Message de Sécurité -->
+          <p class="warning">⚠️ Vérifiez toujours ces informations avant de procéder. Nous ne sollicitons jamais de paiement par un autre canal.</p>
+        </div>
+      </section>
+      
+      
+      
+      
+      
     </main>
 
     <footer class="footer">

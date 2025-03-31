@@ -448,6 +448,133 @@ body {
   text-align: center;
 }
 
+/* Structure principale */
+.bank-section {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg,  var(--secondary));
+  padding: 40px 20px;
+}
+
+.bank-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 700px; /* Largeur plus grande */
+  width: 100%;
+  padding: 30px;
+  border-top: 6px solid var(--primary);
+  text-align: center;
+  position: relative;
+}
+
+/* Icône sécurité */
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  color: var(--secondary);
+  background-color: rgba(0, 188, 212, 0.1);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Titres */
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+/* Détails bancaires */
+.bank-details {
+  text-align: left;
+  font-family: monospace;
+  background-color: var(--light-gray);
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 17px;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+.name{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.bank-details p {
+  margin: 10px 0;
+}
+
+.banq {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Bouton */
+.copy-btn {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.copy-btn:hover {
+  background-color: #e91e63; /* Teinte plus foncée au survol */
+}
+
+/* Avertissement */
+.warning {
+  font-size: 14px;
+  color: #e53935;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .bank-container {
+    padding: 50px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .bank-details {
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  .copy-btn {
+    width: 50%;
+  }
+}
+
 .footer {
   background: var(--dark);
   color: white;
